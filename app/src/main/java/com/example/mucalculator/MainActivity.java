@@ -1,5 +1,7 @@
 package com.example.mucalculator;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private CountShow countShow;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +31,16 @@ public class MainActivity extends AppCompatActivity {
         mainScreen = findViewById(R.id.main_screen);
         memoryScreen = findViewById(R.id.memory_screen);
         countShow = new CountShow(mainScreen, memoryScreen);
+
+
+        findViewById(R.id.button_settings).setOnClickListener(v -> {
+            Intent intent = new Intent(this,MainActivity2.class);
+
+            startActivity(intent);
+              });
     }
+
+
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -85,9 +97,11 @@ public class MainActivity extends AppCompatActivity {
                 if (!countShow.getEquation().isEmpty() || !input.isEmpty()) {
                     countShow.addToEquation(button.getText().toString());
                     mainScreen.setText(countShow.calculate());
+
                 }
             }
         }
+
 
     }
 }

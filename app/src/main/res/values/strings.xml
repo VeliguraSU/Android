@@ -17,4 +17,7 @@
     <string name="Button_9" translatable="false">9</string>
     <string name="Button_8" translatable="false">8</string>
     <string name="Button_7" translatable="false">7</string>
+    <string name="switchText">переключение темы</string>
+    <string name="themaSwotch">пекреключение темы</string>
+    <string name="button_settings">Настройки</string>
 </resources>
