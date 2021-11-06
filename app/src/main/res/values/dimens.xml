@@ -3,4 +3,5 @@
     <dimen name="TextSize">25sp</dimen>
     <dimen name="ButtonTextSize">20sp</dimen>
     <dimen name="ScreenSize">50dp</dimen>
+    <dimen name="margin">4dp</dimen>
 </resources>

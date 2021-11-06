@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:theme="@style/MyTheme"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".MainActivity">
 
         <TextView
             android:id="@+id/memory_screen"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:layout_marginTop="4dp"
+
             android:background="@color/design_default_color_secondary_variant"
             android:textSize="@dimen/TextSize"
             app:layout_constraintBottom_toTopOf="@+id/main_screen"
@@ -330,14 +330,11 @@
             android:id="@+id/button_settings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
             android:text="@string/button_settings"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.453"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_equal"
-            app:layout_constraintVertical_bias="0.466" />
+            app:layout_constraintTop_toBottomOf="@+id/button_equal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
